@@ -1,0 +1,22 @@
+{
+  "name": "productsrestapi-s",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rajesh5696/ProductsRestApi-s.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rajesh5696/ProductsRestApi-s/issues"
+  },
+  "homepage": "https://github.com/Rajesh5696/ProductsRestApi-s#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
