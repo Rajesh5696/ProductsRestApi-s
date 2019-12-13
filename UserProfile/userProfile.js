@@ -7,7 +7,7 @@ var objectId = require('mongodb').ObjectID;
 console.log('created');
 router.post('/', function (req, res) {
     var input = req.body
-    let response = { statusCode: 1, statusMessage: "Success" }
+    var  response = { statusCode: 1, statusMessage: "Success" }
     console.log('userLogin', input);
 
     var query = {name : input.name}
