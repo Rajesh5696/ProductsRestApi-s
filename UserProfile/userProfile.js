@@ -6,7 +6,7 @@ mongoose.promise = global.promise;
 var objectId = require('mongodb').ObjectID;
 console.log('created');
 router.post('/', function (req, res) {
-    let input = req.body
+    var input = req.body
     let response = { statusCode: 1, statusMessage: "Success" }
     console.log('userLogin', input);
 
