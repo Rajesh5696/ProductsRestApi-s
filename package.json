@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/Rajesh5696/ProductsRestApi-s#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.4.0",
+    "mongoose": "^5.8.0",
+    "nodemon": "^2.0.2",
+    "validator": "^12.1.0"
   }
 }
