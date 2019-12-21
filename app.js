@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
-const port = 3000
+
+const port = process.env.PORT||80
+// const port =3000
 var mongoose = require('mongoose')
 var userProfilesModal=require('./UserProfile/userProfile');
 app.use(express.json());
@@ -15,6 +17,10 @@ app.use(express.json());
 app.listen(port, () => {
 ConnecttoMonoDb()
 console.log(`app listening on port ${port}!`)
+app.get('/', (req, res) => {
+    res.send('HEY')
+  })
+  
 })
 
 
@@ -22,8 +28,11 @@ function ConnecttoMonoDb(){
     mongoose.connect('mongodb://localhost:27017/Sample',(err,client)=>{
         if(err){
             return console.log('unable to connect mongodb')
+            res.send('sorry!')
         }else{
+            
             console.log('connected to  mongodb')
+            app.send('HEY!')
             app.use('/UserProfile',userProfilesModal);
         }
     });
