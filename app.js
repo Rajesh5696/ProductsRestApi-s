@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-const port = process.env.PORT||3000
+const port = process.env.PORT||process.env.IP
 // const port =3000
 var mongoose = require('mongoose')
 var userProfilesModal=require('./UserProfile/userProfile');
@@ -34,7 +34,7 @@ function ConnecttoMonoDb(){
         }else{
             
             console.log('connected to  mongodb')
-            app.send('HEY!')
+            console.log('','client say hiii   !!!');
             app.use('/UserProfile',userProfilesModal);
         }
     });
