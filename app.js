@@ -25,6 +25,8 @@ app.get('/', (req, res) => {
 
 
 function ConnecttoMonoDb(){
+
+
     mongoose.connect('mongodb://localhost:27017/Sample',(err,client)=>{
         if(err){
             return console.log('unable to connect mongodb')
