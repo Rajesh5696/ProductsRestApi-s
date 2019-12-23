@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 function ConnecttoMonoDb(){
 
 
-    mongoose.connect('mongodb://52.66.166.185:27017/Sample',(err,client)=>{
+    mongoose.connect('mongodb:52.66.166.185:27017',(err,client)=>{
         if(err){
             return console.log('unable to connect mongodb')
             res.send('sorry!')
