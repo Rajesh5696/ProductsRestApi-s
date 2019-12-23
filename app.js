@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-const port = process.env.PORT||process.env.IP
+const port = process.env.PORT||'ec2-52-66-166-185.ap-south-1.compute.amazonaws.com'
 // const port =3000
 var mongoose = require('mongoose')
 var userProfilesModal=require('./UserProfile/userProfile');
