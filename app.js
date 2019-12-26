@@ -28,7 +28,7 @@ function ConnecttoMonoDb(){
 
     mongoose.set('useNewUrlParser', true);
     mongoose.set('useUnifiedTopology', true);
-    mongoose.connect('mongodb://52.66.166.185:27017/sample', { useNewUrlParser: true },(err,client)=>{
+    mongoose.connect('mongodb://52.66.166.185:27017', { useNewUrlParser: true },(err,client)=>{
         if(err){
             return console.log('unable to connect mongodb',err)
             res.send('sorry!')
