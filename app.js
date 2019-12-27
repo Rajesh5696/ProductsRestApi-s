@@ -8,6 +8,11 @@ var userProfilesModal=require('./UserProfile/userProfile');
 app.use(express.json());
 
 
+
+
+
+
+
 // app.get('/', (req, res) => res.send('Hello World!'))
 
 
@@ -27,11 +32,11 @@ app.get('/', (req, res) => {
 function ConnecttoMonoDb(){
 
 
-<<<<<<< HEAD
-    mongoose.connect('mongodb://52.66.166.185:27017',(err,client)=>{
-=======
-    mongoose.connect('mongodb:52.66.166.185:27017',(err,client)=>{
->>>>>>> d00b082a5c20a42c974385d6a1cb953466da9c7e
+
+    mongoose.connect('mongodb://52.66.166.185/admin:27017',(err,client)=>{
+
+    // mongoose.connect('mongodb:52.66.166.185:27017',(err,client)=>{
+
         if(err){
             return console.log('unable to connect mongodb')
             res.send('sorry!')
